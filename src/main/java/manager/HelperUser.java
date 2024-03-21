@@ -37,19 +37,18 @@ public class HelperUser extends HelperBase{
     public void submitLogin(){
         click(By.name("login"));
     }
+
     public void submitRegistration(){
         click(By.name("registration"));
     }
+
     public boolean isLogged() {
-
     return isElementPresent(By.xpath("//button[text() = 'Sign Out']"));
-
     }
 
     public void logout() {
         click(By.xpath("//button[text() = 'Sign Out']"));
     }
-
 
     public void fillLoginRegistrationForm(User user) {
         type(By.name("email"), user.getEmail());

@@ -39,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.LoginTests.executor": "Run",
-    "Gradle.LoginTests.loginSuccess.executor": "Run",
-    "Gradle.LoginTests.loginSuccessModel.executor": "Run",
-    "Gradle.LoginTests.loginUnregisteredUser.executor": "Run",
-    "Gradle.LoginTests.loginWrongEmail.executor": "Run",
-    "Gradle.LoginTests.loginWrongPassword.executor": "Run",
-    "Gradle.LoginTests.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginSuccessModel.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginUnregisteredUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginWrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginWrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.LoginTests">
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
