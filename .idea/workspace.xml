@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="added class User" />
+    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="added class Contact &amp; RegistrationSuccess" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,22 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginSuccess.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginSuccessModel.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginUnregisteredUser.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginWrongEmail.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginWrongPassword.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.loginSuccess.executor": "Run",
+    "Gradle.LoginTests.loginSuccessModel.executor": "Run",
+    "Gradle.LoginTests.loginUnregisteredUser.executor": "Run",
+    "Gradle.LoginTests.loginWrongEmail.executor": "Run",
+    "Gradle.LoginTests.loginWrongPassword.executor": "Run",
+    "Gradle.LoginTests.test.executor": "Run",
+    "Gradle.RegistrationTests.executor": "Run",
+    "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.LoginTests">
+}]]></component>
+  <component name="RunManager" selected="Gradle.RegistrationTests">
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -127,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginUnregisteredUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginUnregisteredUser&quot;" />
+            <option value="&quot;tests.RegistrationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginWrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginWrongPassword&quot;" />
+            <option value="&quot;tests.RegistrationTests.registrationSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTests" />
+        <item itemvalue="Gradle.RegistrationTests.registrationSuccess" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.LoginTests.loginSuccessModel" />
         <item itemvalue="Gradle.LoginTests.loginSuccess" />
-        <item itemvalue="Gradle.LoginTests.loginUnregisteredUser" />
-        <item itemvalue="Gradle.LoginTests.loginWrongPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -217,12 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710788940829</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added class Contact &amp; RegistrationSuccess">
+      <option name="closed" value="true" />
+      <created>1711046987156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711046987156</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added negativeLoginTests &amp; new methods" />
     <MESSAGE value="added class User" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class User" />
+    <MESSAGE value="added class Contact &amp; RegistrationSuccess" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class Contact &amp; RegistrationSuccess" />
   </component>
 </project>
