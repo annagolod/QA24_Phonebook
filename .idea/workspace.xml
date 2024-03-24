@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="added class Contact &amp; RegistrationSuccess" />
+    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="NegativeRegistrationTests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,86 +49,17 @@
     "Gradle.LoginTests.loginWrongPassword.executor": "Run",
     "Gradle.LoginTests.test.executor": "Run",
     "Gradle.RegistrationTests.executor": "Run",
+    "Gradle.RegistrationTests.registrationExistsUser.executor": "Run",
     "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
+    "Gradle.RegistrationTests.registrationWrongEmail.executor": "Run",
+    "Gradle.RegistrationTests.registrationWrongPassword.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.RegistrationTests">
-    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LoginTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.loginSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccess&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.loginSuccessModel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccessModel&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationSuccess">
     <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -143,6 +74,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.RegistrationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationExistsUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegistrationTests.registrationExistsUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,13 +132,61 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="RegistrationTests.registrationWrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegistrationTests.registrationWrongEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationWrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegistrationTests.registrationWrongPassword&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTests" />
         <item itemvalue="Gradle.RegistrationTests.registrationSuccess" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.loginSuccessModel" />
-        <item itemvalue="Gradle.LoginTests.loginSuccess" />
+        <item itemvalue="Gradle.RegistrationTests.registrationExistsUser" />
+        <item itemvalue="Gradle.RegistrationTests.registrationWrongPassword" />
+        <item itemvalue="Gradle.RegistrationTests.registrationWrongEmail" />
+        <item itemvalue="Gradle.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +230,22 @@
       <option name="project" value="LOCAL" />
       <updated>1711046987156</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="NegativeRegistrationTests">
+      <option name="closed" value="true" />
+      <created>1711307253088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711307253088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added negativeLoginTests &amp; new methods" />
     <MESSAGE value="added class User" />
     <MESSAGE value="added class Contact &amp; RegistrationSuccess" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class Contact &amp; RegistrationSuccess" />
+    <MESSAGE value="NegativeRegistrationTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="NegativeRegistrationTests" />
   </component>
 </project>
