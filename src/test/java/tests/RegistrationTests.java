@@ -22,6 +22,38 @@ public class RegistrationTests extends TestBase{
         app.getHelperUser().submitRegistration();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
+        Assert.assertTrue(app.getHelperUser().isNoContactsHereDisplayed());
 
+    }
+    @Test//(description = "Bug report #12354", enabled = false)
+    public void registrationWrongEmail(){
+
+        User user = new User().withEmail("tatgmail.com").withPassword("Tat67890#");
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitRegistration();
+
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+    }
+
+    @Test
+    public void registrationWrongPassword(){
+
+        User user = new User().withEmail("tat@gmail.com").withPassword("Tat67");
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitRegistration();
+
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
+    }
+    @Test
+    public void registrationExistsUser(){
+
+        User user = new User().withEmail("tretam0810@gmail.com").withPassword("Phone54321#");
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        app.getHelperUser().submitRegistration();
+
+        Assert.assertTrue(app.getHelperUser().isAlertPresent("User already exist"));
     }
 }
