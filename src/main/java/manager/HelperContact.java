@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class HelperContact extends HelperBase{
+public class HelperContact extends HelperBase {
     public HelperContact(WebDriver wd) {
         super(wd);
     }
@@ -28,11 +28,29 @@ public class HelperContact extends HelperBase{
     public void saveContact() {
         click(By.xpath("//button[.='Save']"));
     }
+    //.add_form__2rsm2>button
 
-    public String getLastAddedContactCard(){
-       return wd.findElement
-                (By.xpath("//div[@class = 'contact-item_card__2SOIM'][last()]"))
-               .getText();
+    public String getLastAddedContactCard() {
+        return wd.findElement
+                        (By.xpath("//div[@class = 'contact-item_card__2SOIM'][last()]"))
+                .getText();
     }
 
+    public boolean isContactAddedByName(String name) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h2"));
+        for (WebElement el: list){
+            if(el.getText().equals(name))
+                return true;
+        }
+        return false;
+    }
+
+    public boolean isContactAddedByPhone(String phone) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h3"));
+        for (WebElement el: list){
+            if(el.getText().equals(phone))
+                return true;
+        }
+        return false;
+    }
 }
