@@ -1,9 +1,7 @@
 package manager;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,6 +18,7 @@ public class HelperBase {
     public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
             element.click();
+            //clickNew(locator);
             element.clear();
             if (text != null) {
                 element.sendKeys(text);
@@ -31,6 +30,16 @@ public class HelperBase {
         element.click();
 
     }
+
+//    public void clickNew(By locator){
+//        WebElement el = wd.findElement(locator);
+//        Rectangle rect = el.getRect();
+//        int w = rect.getWidth();
+//        Actions actions = new Actions(wd);
+//        int xOffSet = -w / 2;
+//        actions.moveToElement(el, xOffSet, 0).click().release().perform();
+//
+//    }
 
     public boolean isElementPresent(By locator){
         List<WebElement> list = wd.findElements(locator);
