@@ -167,5 +167,4 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().click(By.cssSelector("a[href='/contacts']"));
     }
 
-
 }

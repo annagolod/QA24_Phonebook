@@ -17,9 +17,10 @@ public class HelperBase {
 
     public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
-            element.click();
-            //clickNew(locator);
-            element.clear();
+        //element.click();
+        clearNew(locator);
+        //element.clear();
+        //clickNew(locator);
             if (text != null) {
                 element.sendKeys(text);
         }
@@ -36,10 +37,20 @@ public class HelperBase {
 //        Rectangle rect = el.getRect();
 //        int w = rect.getWidth();
 //        Actions actions = new Actions(wd);
-//        int xOffSet = -w / 2;
+//        int xOffSet = - (w / 2);
 //        actions.moveToElement(el, xOffSet, 0).click().release().perform();
 //
 //    }
+
+    public void clearNew(By locator){
+        WebElement el = wd.findElement(locator);
+        String operationSystem = System.getProperty("os.name");
+        if(operationSystem.startsWith("Win"))
+            el.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+        else if(operationSystem.startsWith("Mac"))
+            el.sendKeys(Keys.chord(Keys.COMMAND, "a", Keys.DELETE));
+
+    }
 
     public boolean isElementPresent(By locator){
         List<WebElement> list = wd.findElements(locator);
