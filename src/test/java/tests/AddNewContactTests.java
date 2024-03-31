@@ -31,6 +31,7 @@ public class AddNewContactTests extends TestBase {
                 .build();
         app.getHelperContact().openAddNewContactForm();
         app.getHelperContact().fillAddNewContactForm(contact);
+        app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
         app.getHelperContact().saveContact();
 
         Assert.assertEquals(app.getHelperContact().getLastAddedContactCard(),
