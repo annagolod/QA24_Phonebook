@@ -21,7 +21,7 @@ public class ListenerWD extends AbstractWebDriverEventListener {
         logger.info("Huston, we have a problem!");
         logger.info(throwable.getMessage());
         logger.info(throwable.fillInStackTrace().toString());
-        int i = (int)(System.currentTimeMillis()/1000)%3600;
+        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         String link = "src/test/screenshots/screen-" + i + ".png";
         HelperBase helperBase = new HelperBase(driver);
         helperBase.getScreen(link);
@@ -56,27 +56,25 @@ public class ListenerWD extends AbstractWebDriverEventListener {
     @Override
     public void beforeClickOn(WebElement element, WebDriver driver) {
         super.beforeClickOn(element, driver);
-        logger.info("start method click");
+        logger.info("start method click on element " + element.getTagName());
     }
 
     @Override
     public void afterClickOn(WebElement element, WebDriver driver) {
         super.afterClickOn(element, driver);
-        logger.info("done method click");
+        logger.info("method click is executed");
     }
-
-
-
-
 
     @Override
     public void beforeAlertAccept(WebDriver driver) {
         super.beforeAlertAccept(driver);
+        logger.info("Alert is asking to be accepted");
     }
 
     @Override
     public void afterAlertAccept(WebDriver driver) {
         super.afterAlertAccept(driver);
+        logger.info("Alert is accepted");
     }
 
     @Override
@@ -94,11 +92,13 @@ public class ListenerWD extends AbstractWebDriverEventListener {
     @Override
     public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         super.beforeChangeValueOf(element, driver, keysToSend);
+        logger.info("Value of the element will be changed");
     }
 
     @Override
     public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         super.afterChangeValueOf(element, driver, keysToSend);
+        logger.info("Value of the element is changed");
     }
 
     @Override

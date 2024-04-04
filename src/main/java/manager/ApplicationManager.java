@@ -36,8 +36,6 @@ public class ApplicationManager {
         helperUser = new HelperUser(wd);
         helperContact = new HelperContact(wd);
         wd.register(new ListenerWD(logger));
-
-
     }
 
     public void stop(){

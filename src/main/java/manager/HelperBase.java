@@ -77,7 +77,6 @@ public class HelperBase {
             return true;
         }
         return false;
-
     }
 
     public void pause(int time){

@@ -81,7 +81,6 @@ public class HelperContact extends HelperBase {
     }
 
     public String getMessage() {
-
         return wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")).getText();
     }
 
@@ -98,7 +97,7 @@ public class HelperContact extends HelperBase {
         Contact contact = Contact.builder()
                 .name("Harry" + i)
                 .lastName("Potter")
-                .email("harry"+i+"@gmail.com")
+                .email("harry" + i + "@gmail.com")
                 .phone("125713645" + i)
                 .address("Hogwards")
                 .description("none")

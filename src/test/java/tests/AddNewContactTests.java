@@ -160,7 +160,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().fillAddNewContactForm(contact);
         app.getHelperContact().saveContact();
 
-        Assert.assertTrue(app.getHelperContact().isAlertPresent("Email not valid: должно иметь формат адреса электронной почты"));
+        Assert.assertTrue(app.getHelperContact().isAlertPresent("Email not valid: must be a well-formed email address"));
     }
 
     @AfterMethod
