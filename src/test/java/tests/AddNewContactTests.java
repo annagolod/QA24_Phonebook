@@ -1,5 +1,6 @@
 package tests;
 
+import manager.DataProviderContact;
 import models.Contact;
 import models.User;
 import org.openqa.selenium.By;
@@ -18,17 +19,18 @@ public class AddNewContactTests extends TestBase {
         }
     }
 
-    @Test
-    public void AddNewContactSuccessAll() {
+    @Test(dataProvider = "contactSuccess", dataProviderClass = DataProviderContact.class)
+    public void AddNewContactSuccessAll(Contact contact) {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
-        Contact contact = Contact.builder()
-                .name("John")
-                .lastName("Brown")
-                .phone("1234567" + i)
-                .email("abc" + i + "@nv.com")
-                .address("New-York")
-                .description("Boss")
-                .build();
+//        Contact contact = Contact.builder()
+//                .name("John")
+//                .lastName("Brown")
+//                .phone("1234567" + i)
+//                .email("abc" + i + "@nv.com")
+//                .address("New-York")
+//                .description("Boss")
+//                .build();
+        logger.info("Tests run with data --> " + contact.toString());
         app.getHelperContact().openAddNewContactForm();
         app.getHelperContact().fillAddNewContactForm(contact);
         app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
@@ -130,15 +132,16 @@ public class AddNewContactTests extends TestBase {
         Assert.assertFalse(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
     }
 
-    @Test
-    public void addNewContactWrongPhone() {
-        Contact contact = Contact.builder()
-                .name("John")
-                .lastName("White")
-                .phone("1234567")
-                .email("abc123@nv.com")
-                .address("London")
-                .build();
+    @Test(dataProvider = "contactWrongPhone", dataProviderClass = DataProviderContact.class)
+    public void addNewContactWrongPhone(Contact contact) {
+//        Contact contact = Contact.builder()
+//                .name("John")
+//                .lastName("White")
+//                .phone("1234567")
+//                .email("abc123@nv.com")
+//                .address("London")
+//                .build();
+        logger.info("Tests run with data --> " + contact.toString());
         app.getHelperContact().openAddNewContactForm();
         app.getHelperContact().fillAddNewContactForm(contact);
         app.getHelperContact().saveContact();

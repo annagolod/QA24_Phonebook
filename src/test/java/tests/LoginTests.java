@@ -1,9 +1,16 @@
 package tests;
 
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
 
 public class LoginTests extends TestBase{
     @BeforeMethod
@@ -15,12 +22,12 @@ public class LoginTests extends TestBase{
         }
 
     }
-    @Test
-    public void loginSuccess(){
+    @Test(dataProvider = "loginData", dataProviderClass = DataProviderUser.class)
+    public void loginSuccess(String email, String password){
         //logger.info("Start test with name 'loginSuccess'");
-        logger.info("Test data--> email: tretam0810@gmail.com, password: Phone54321#");
+        logger.info("Test data--> email: " + email + " & password: " + password);
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("tretam0810@gmail.com", "Phone54321#");
+        app.getHelperUser().fillLoginRegistrationForm(email, password);
         app.getHelperUser().submitLogin();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
@@ -28,10 +35,11 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test
-    public void loginSuccessModel(){
-        logger.info("Test data--> email: tretam0810@gmail.com, password: Phone54321#");
-        User user = new User().withEmail("tretam0810@gmail.com").withPassword("Phone54321#");
+
+    @Test(dataProvider = "loginModels", dataProviderClass = DataProviderUser.class)
+    public void loginSuccessModel(User user){
+        logger.info("Test data--> " + user.toString());
+        //User user = new User().withEmail("tretam0810@gmail.com").withPassword("Phone54321#");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitLogin();

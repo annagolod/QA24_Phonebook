@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="Added RemoveContactTests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-20240401T135520.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-20240403T184355.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ListenerWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ListenerWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen.png" beforeDir="false" />
-    </list>
+    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="Added loggers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -338,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712166237565</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added loggers">
+      <option name="closed" value="true" />
+      <created>1712230306853</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712230306853</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,9 +348,9 @@
     <MESSAGE value="Add asserts for new contacts" />
     <MESSAGE value="AddContactNegativeTests" />
     <MESSAGE value="Added new method clearNew" />
-    <MESSAGE value="Added loggers" />
     <MESSAGE value="Added ListenerWD" />
     <MESSAGE value="Added RemoveContactTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RemoveContactTests" />
+    <MESSAGE value="Added loggers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added loggers" />
   </component>
 </project>
