@@ -42,6 +42,29 @@ public class AddNewContactTests extends TestBase {
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
     }
 
+    @Test(dataProvider = "contactCSV", dataProviderClass = DataProviderContact.class)
+    public void AddNewContactSuccessAllDP(Contact contact) {
+        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
+//        Contact contact = Contact.builder()
+//                .name("John")
+//                .lastName("Brown")
+//                .phone("1234567" + i)
+//                .email("abc" + i + "@nv.com")
+//                .address("New-York")
+//                .description("Boss")
+//                .build();
+        logger.info("Tests run with data --> " + contact.toString());
+        app.getHelperContact().openAddNewContactForm();
+        app.getHelperContact().fillAddNewContactForm(contact);
+        app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
+        app.getHelperContact().saveContact();
+
+        Assert.assertEquals(app.getHelperContact().getLastAddedContactCard(),
+                contact.getName() + "\n" + contact.getPhone());
+        Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
+        Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
+    }
+
     @Test
     public void AddNewContactSuccess() {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
