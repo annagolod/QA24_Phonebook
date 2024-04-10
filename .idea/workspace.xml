@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="Added DataProviderContact &amp; DataProviderUser">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/DataProviderUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/DataProviderUser.java" afterDir="false" />
-    </list>
+    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="DPfromFileCSV" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +21,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="QA24_Phonebook" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -53,42 +59,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.AddNewContactTests.AddNewContactSuccess.executor": "Run",
-    "Gradle.AddNewContactTests.AddNewContactSuccessAll.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactWrongAddress.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactWrongEmail.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactWrongLastName.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactWrongName.executor": "Run",
-    "Gradle.AddNewContactTests.addNewContactWrongPhone.executor": "Run",
-    "Gradle.AddNewContactTests.executor": "Run",
-    "Gradle.LoginTests.executor": "Run",
-    "Gradle.LoginTests.loginSuccess.executor": "Run",
-    "Gradle.LoginTests.loginSuccessModel.executor": "Run",
-    "Gradle.LoginTests.loginUnregisteredUser.executor": "Run",
-    "Gradle.LoginTests.loginWrongEmail.executor": "Run",
-    "Gradle.LoginTests.loginWrongPassword.executor": "Run",
-    "Gradle.LoginTests.test.executor": "Run",
-    "Gradle.RegistrationTests.executor": "Run",
-    "Gradle.RegistrationTests.registrationExistsUser.executor": "Run",
-    "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
-    "Gradle.RegistrationTests.registrationWrongEmail.executor": "Run",
-    "Gradle.RegistrationTests.registrationWrongPassword.executor": "Run",
-    "Gradle.RemoveContactTests.executor": "Run",
-    "Gradle.RemoveContactTests.removeAllContacts.executor": "Run",
-    "Gradle.RemoveContactTests.removeFirstContact.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.AddNewContactTests.AddNewContactSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.AddNewContactSuccessAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactWrongAddress.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactWrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactWrongLastName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactWrongName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.addNewContactWrongPhone.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewContactTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginSuccessModel.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginUnregisteredUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginWrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginWrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationExistsUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationWrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationWrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RemoveContactTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RemoveContactTests.removeAllContacts.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RemoveContactTests.removeFirstContact.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.AddNewContactTests">
     <configuration name="AddNewContactTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -348,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712512210677</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="DPfromFileCSV">
+      <option name="closed" value="true" />
+      <created>1712770904211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712770904211</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -365,6 +379,7 @@
     <MESSAGE value="Added RemoveContactTests" />
     <MESSAGE value="Added loggers" />
     <MESSAGE value="Added DataProviderContact &amp; DataProviderUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DataProviderContact &amp; DataProviderUser" />
+    <MESSAGE value="DPfromFileCSV" />
+    <option name="LAST_COMMIT_MESSAGE" value="DPfromFileCSV" />
   </component>
 </project>
