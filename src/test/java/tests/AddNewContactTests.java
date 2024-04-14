@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class AddNewContactTests extends TestBase {
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void preCondition() {
         if (!app.getHelperUser().isLogged()) {
             app.getHelperUser().login(new User().withEmail("tretam0810@gmail.com").withPassword("Phone54321#"));
@@ -65,7 +65,7 @@ public class AddNewContactTests extends TestBase {
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void AddNewContactSuccess() {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         Contact contact = Contact.builder()
@@ -189,7 +189,7 @@ public class AddNewContactTests extends TestBase {
         Assert.assertTrue(app.getHelperContact().isAlertPresent("Email not valid: must be a well-formed email address"));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
         app.getHelperContact().click(By.cssSelector("a[href='/contacts']"));
     }
