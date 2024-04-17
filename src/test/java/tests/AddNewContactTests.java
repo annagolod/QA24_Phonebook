@@ -65,7 +65,7 @@ public class AddNewContactTests extends TestBase {
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke","regress", "retest"})
     public void AddNewContactSuccess() {
         int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         Contact contact = Contact.builder()
