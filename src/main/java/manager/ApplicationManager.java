@@ -38,7 +38,8 @@ public class ApplicationManager {
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("All tests run in Chrome Browser");
         }else if(browser.equals(BrowserType.FIREFOX)){
-            wd= new EventFiringWebDriver(new FirefoxDriver());
+            System.setProperty("webdriver.firefox.bin", "/Applications/Firefox.app/Contents/MacOS/firefox");
+            wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("All tests run in Firefox Browser");
         } else if (browser.equals(BrowserType.EDGE)) {
             wd = new EventFiringWebDriver(new EdgeDriver());
