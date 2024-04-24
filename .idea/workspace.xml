@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="added task base" />
+    <list default="true" id="8e846d8a-5195-4e09-bb03-5476d9d2cd28" name="Changes" comment="fixed Firefox browser" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -400,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713379839868</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixed Firefox browser">
+      <option name="closed" value="true" />
+      <created>1713433826765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433826765</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -421,6 +429,7 @@
     <MESSAGE value="DPfromFileCSV+ContactCSV" />
     <MESSAGE value="Run test from terminal" />
     <MESSAGE value="added task base" />
-    <option name="LAST_COMMIT_MESSAGE" value="added task base" />
+    <MESSAGE value="fixed Firefox browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed Firefox browser" />
   </component>
 </project>
