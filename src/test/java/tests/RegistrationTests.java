@@ -46,6 +46,8 @@ public class RegistrationTests extends TestBase{
 
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
     }
+
+    //for jenkins
     @Test
     public void registrationExistsUser(){
 
