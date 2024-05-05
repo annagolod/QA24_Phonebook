@@ -48,6 +48,7 @@ public class RegistrationTests extends TestBase{
     }
 
     //for jenkins
+    //
     @Test
     public void registrationExistsUser(){
 
